@@ -1,0 +1,574 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12734000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I launch bowser and naviagte to application using url \"http://adactinhotelapp.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://adactinhotelapp.com/\"",
+                  "offset": 54
+                }
+              ],
+              "location": "steps.StepDefinition.i_launch_bowser_and_naviagte_to_application_using_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-13T02:29:12.786Z",
+        "line": 8,
+        "name": "to validate login",
+        "description": "",
+        "id": "to-validate-login-fucntionaliy-of-adactinapp;to-validate-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 375000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter text \"reyaz009\" in textbox using xpath \"//input[@name\u003d\u0027username\u0027]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"reyaz009\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"//input[@name\u003d\u0027username\u0027]\"",
+                  "offset": 47
+                }
+              ],
+              "location": "steps.StepDefinition.i_enter_text_in_textbox_using_xpath(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 386000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter text \"reyaz123\" in textbox using xpath \"//input[@name\u003d\u0027password\u0027]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"reyaz123\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"//input[@name\u003d\u0027password\u0027]\"",
+                  "offset": 47
+                }
+              ],
+              "location": "steps.StepDefinition.i_enter_text_in_textbox_using_xpath(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3435000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on button using xpath for \"//input[@name\u003d\u0027login\u0027]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"//input[@name\u003d\u0027login\u0027]\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.StepDefinition.i_click_on_button_using_xpath_for(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I verify the title of the page to be \"Adactin.com - Search Hotel\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Adactin.com - Search Hotel\"",
+                  "offset": 37
+                }
+              ],
+              "location": "steps.StepDefinition.i_verify_the_title_of_the_page_to_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1040000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I close the browser",
+            "match": {
+              "location": "steps.StepDefinition.closeBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8089000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I launch bowser and naviagte to application using url \"http://adactinhotelapp.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://adactinhotelapp.com/\"",
+                  "offset": 54
+                }
+              ],
+              "location": "steps.StepDefinition.i_launch_bowser_and_naviagte_to_application_using_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-13T02:29:31.081Z",
+        "line": 25,
+        "name": "to validate login with different data sets",
+        "description": "",
+        "id": "to-validate-login-fucntionaliy-of-adactinapp;to-validate-login-with-different-data-sets;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 252000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter text \"reyaz009\" in textbox using xpath \"//input[@name\u003d\u0027username\u0027]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"reyaz009\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"//input[@name\u003d\u0027username\u0027]\"",
+                  "offset": 47
+                }
+              ],
+              "location": "steps.StepDefinition.i_enter_text_in_textbox_using_xpath(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 295000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I enter text \"reyaz123\" in textbox using xpath \"//input[@name\u003d\u0027password\u0027]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"reyaz123\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"//input[@name\u003d\u0027password\u0027]\"",
+                  "offset": 47
+                }
+              ],
+              "location": "steps.StepDefinition.i_enter_text_in_textbox_using_xpath(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4914000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on button using xpath for \"//input[@name\u003d\u0027login\u0027]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"//input[@name\u003d\u0027login\u0027]\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.StepDefinition.i_click_on_button_using_xpath_for(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I verify the title of the page to be \"Adactin.com - Search Hotel\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Adactin.com - Search Hotel\"",
+                  "offset": 37
+                }
+              ],
+              "location": "steps.StepDefinition.i_verify_the_title_of_the_page_to_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1014000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I close the browser",
+            "match": {
+              "location": "steps.StepDefinition.closeBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8071000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I launch bowser and naviagte to application using url \"http://adactinhotelapp.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://adactinhotelapp.com/\"",
+                  "offset": 54
+                }
+              ],
+              "location": "steps.StepDefinition.i_launch_bowser_and_naviagte_to_application_using_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-13T02:29:45.690Z",
+        "line": 26,
+        "name": "to validate login with different data sets",
+        "description": "",
+        "id": "to-validate-login-fucntionaliy-of-adactinapp;to-validate-login-with-different-data-sets;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 251000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter text \"reyaz009\" in textbox using xpath \"//input[@name\u003d\u0027username\u0027]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"reyaz009\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"//input[@name\u003d\u0027username\u0027]\"",
+                  "offset": 47
+                }
+              ],
+              "location": "steps.StepDefinition.i_enter_text_in_textbox_using_xpath(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 344000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I enter text \"reyaz112\" in textbox using xpath \"//input[@name\u003d\u0027password\u0027]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"reyaz112\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"//input[@name\u003d\u0027password\u0027]\"",
+                  "offset": 47
+                }
+              ],
+              "location": "steps.StepDefinition.i_enter_text_in_textbox_using_xpath(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1050000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on button using xpath for \"//input[@name\u003d\u0027login\u0027]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"//input[@name\u003d\u0027login\u0027]\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.StepDefinition.i_click_on_button_using_xpath_for(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003cAdactin.com - [Search Hotel]\u003e but was:\u003cAdactin.com - [Hotel Reservation System]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat steps.StepDefinition.i_verify_the_title_of_the_page_to_be(StepDefinition.java:48)\r\n\tat ✽.I verify the title of the page to be \"Adactin.com - Search Hotel\"(file:///E:/RamaRao/FrameworkAutomation/src/test/resources/features/regression/ValidateLogin.feature:20)\r\n",
+              "duration": 36000000,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "I verify the title of the page to be \"Adactin.com - Search Hotel\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Adactin.com - Search Hotel\"",
+                  "offset": 37
+                }
+              ],
+              "location": "steps.StepDefinition.i_verify_the_title_of_the_page_to_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I close the browser",
+            "match": {
+              "location": "steps.StepDefinition.closeBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11048000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I launch bowser and naviagte to application using url \"http://adactinhotelapp.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://adactinhotelapp.com/\"",
+                  "offset": 54
+                }
+              ],
+              "location": "steps.StepDefinition.i_launch_bowser_and_naviagte_to_application_using_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-13T02:29:55.483Z",
+        "line": 27,
+        "name": "to validate login with different data sets",
+        "description": "",
+        "id": "to-validate-login-fucntionaliy-of-adactinapp;to-validate-login-with-different-data-sets;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 313000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter text \"reyaz089\" in textbox using xpath \"//input[@name\u003d\u0027username\u0027]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"reyaz089\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"//input[@name\u003d\u0027username\u0027]\"",
+                  "offset": 47
+                }
+              ],
+              "location": "steps.StepDefinition.i_enter_text_in_textbox_using_xpath(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 459000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I enter text \"reyaz162\" in textbox using xpath \"//input[@name\u003d\u0027password\u0027]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"reyaz162\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"//input[@name\u003d\u0027password\u0027]\"",
+                  "offset": 47
+                }
+              ],
+              "location": "steps.StepDefinition.i_enter_text_in_textbox_using_xpath(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 831000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on button using xpath for \"//input[@name\u003d\u0027login\u0027]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"//input[@name\u003d\u0027login\u0027]\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.StepDefinition.i_click_on_button_using_xpath_for(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003cAdactin.com - [Search Hotel]\u003e but was:\u003cAdactin.com - [Hotel Reservation System]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat steps.StepDefinition.i_verify_the_title_of_the_page_to_be(StepDefinition.java:48)\r\n\tat ✽.I verify the title of the page to be \"Adactin.com - Search Hotel\"(file:///E:/RamaRao/FrameworkAutomation/src/test/resources/features/regression/ValidateLogin.feature:20)\r\n",
+              "duration": 45000000,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "I verify the title of the page to be \"Adactin.com - Search Hotel\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Adactin.com - Search Hotel\"",
+                  "offset": 37
+                }
+              ],
+              "location": "steps.StepDefinition.i_verify_the_title_of_the_page_to_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I close the browser",
+            "match": {
+              "location": "steps.StepDefinition.closeBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag2"
+          }
+        ]
+      }
+    ],
+    "name": "To validate login fucntionaliy of Adactinapp",
+    "description": "",
+    "id": "to-validate-login-fucntionaliy-of-adactinapp",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/regression/ValidateLogin.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
