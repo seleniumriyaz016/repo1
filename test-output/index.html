@@ -5,9 +5,8 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -24,9 +23,8 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\REYAZ\AppData\Local\Temp\testng-eclipse-229894080\testng-customsuite.xml</span>
+                    <span>C:\Users\REYAZ\AppData\Local\Temp\testng-eclipse-968458692\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,17 +102,12 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testscripts.regression.DBTestingDataProvider" hash-for-method="adactinLoginTest(reyaz009, reyaz456)">adactinLoginTest(reyaz009, reyaz456)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testscripts.regression.ValidateLoginPOM" hash-for-method="validateLoginPOMTest(reyaz010, reyaz123)">validateLoginPOMTest(reyaz010, reyaz123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testscripts.regression.DBTestingDataProvider" hash-for-method="adactinLoginTest(reyaz001, reyaz123)">adactinLoginTest(reyaz001, reyaz123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testscripts.regression.DBTestingDataProvider" hash-for-method="adactinLoginTest(reyaz001, reyaz456)">adactinLoginTest(reyaz001, reyaz456)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testscripts.regression.ValidateLoginPOM" hash-for-method="validateLoginPOMTest(reyaz009, reyaz423)">validateLoginPOMTest(reyaz009, reyaz423)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -128,7 +121,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testscripts.regression.DBTestingDataProvider" hash-for-method="adactinLoginTest(reyaz009, reyaz123)">adactinLoginTest(reyaz009, reyaz123)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testscripts.regression.ValidateLoginPOM" hash-for-method="validateLoginPOMTest(reyaz009, reyaz123)">validateLoginPOMTest(reyaz009, reyaz123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -146,44 +139,65 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testscripts.regression.DBTestingDataProvider</span>
+              <span class="class-name">testscripts.regression.ValidateLoginPOM</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="adactinLoginTest(reyaz009, reyaz456)">
-                  </a> <!-- adactinLoginTest(reyaz009, reyaz456) -->
-                  <span class="method-name">adactinLoginTest</span>
-                  <span class="parameters">(reyaz009, reyaz456)</span>
-                  <div class="stack-trace">junit.framework.ComparisonFailure: expected:&lt;Adactin.com - [Search Hotel]&gt; but was:&lt;Adactin.com - [Hotel Reservation System]&gt;
-	at junit.framework.Assert.assertEquals(Assert.java:100)
-	at junit.framework.Assert.assertEquals(Assert.java:107)
-	at testscripts.regression.DBTestingDataProvider.adactinLoginTest(DBTestingDataProvider.java:62)
+                  <a name="validateLoginPOMTest(reyaz010, reyaz123)">
+                  </a> <!-- validateLoginPOMTest(reyaz010, reyaz123) -->
+                  <span class="method-name">validateLoginPOMTest</span>
+                  <span class="parameters">(reyaz010, reyaz123)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;username&apos;]&quot;}
+  (Session info: chrome=86.0.4240.193)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADMIN&apos;, ip: &apos;192.168.48.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\REYAZ\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55362}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4a6573ef94ae7f1b8c73ed0e339af70e
+*** Element info: {Using=xpath, value=//input[@name=&apos;username&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at pages.HomePage.login(HomePage.java:43)
+	at testscripts.regression.ValidateLoginPOM.validateLoginPOMTest(ValidateLoginPOM.java:28)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
@@ -193,81 +207,60 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="adactinLoginTest(reyaz001, reyaz123)">
-                  </a> <!-- adactinLoginTest(reyaz001, reyaz123) -->
-                  <span class="method-name">adactinLoginTest</span>
-                  <span class="parameters">(reyaz001, reyaz123)</span>
-                  <div class="stack-trace">junit.framework.ComparisonFailure: expected:&lt;Adactin.com - [Search Hotel]&gt; but was:&lt;Adactin.com - [Hotel Reservation System]&gt;
-	at junit.framework.Assert.assertEquals(Assert.java:100)
-	at junit.framework.Assert.assertEquals(Assert.java:107)
-	at testscripts.regression.DBTestingDataProvider.adactinLoginTest(DBTestingDataProvider.java:62)
+                  <a name="validateLoginPOMTest(reyaz009, reyaz423)">
+                  </a> <!-- validateLoginPOMTest(reyaz009, reyaz423) -->
+                  <span class="method-name">validateLoginPOMTest</span>
+                  <span class="parameters">(reyaz009, reyaz423)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;username&apos;]&quot;}
+  (Session info: chrome=86.0.4240.193)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADMIN&apos;, ip: &apos;192.168.48.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\REYAZ\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55362}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4a6573ef94ae7f1b8c73ed0e339af70e
+*** Element info: {Using=xpath, value=//input[@name=&apos;username&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at pages.HomePage.login(HomePage.java:43)
+	at testscripts.regression.ValidateLoginPOM.validateLoginPOMTest(ValidateLoginPOM.java:28)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="adactinLoginTest(reyaz001, reyaz456)">
-                  </a> <!-- adactinLoginTest(reyaz001, reyaz456) -->
-                  <span class="method-name">adactinLoginTest</span>
-                  <span class="parameters">(reyaz001, reyaz456)</span>
-                  <div class="stack-trace">junit.framework.ComparisonFailure: expected:&lt;Adactin.com - [Search Hotel]&gt; but was:&lt;Adactin.com - [Hotel Reservation System]&gt;
-	at junit.framework.Assert.assertEquals(Assert.java:100)
-	at junit.framework.Assert.assertEquals(Assert.java:107)
-	at testscripts.regression.DBTestingDataProvider.adactinLoginTest(DBTestingDataProvider.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
@@ -280,14 +273,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testscripts.regression.DBTestingDataProvider</span>
+              <span class="class-name">testscripts.regression.ValidateLoginPOM</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="adactinLoginTest(reyaz009, reyaz123)">
-                  </a> <!-- adactinLoginTest(reyaz009, reyaz123) -->
-                  <span class="method-name">adactinLoginTest</span>
+                  <a name="validateLoginPOMTest(reyaz009, reyaz123)">
+                  </a> <!-- validateLoginPOMTest(reyaz009, reyaz123) -->
+                  <span class="method-name">validateLoginPOMTest</span>
                   <span class="parameters">(reyaz009, reyaz123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -296,16 +289,16 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\REYAZ\AppData\Local\Temp\testng-eclipse-229894080\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\REYAZ\AppData\Local\Temp\testng-eclipse-968458692\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testscripts.regression.DBTestingDataProvider&quot;/&gt;
+      &lt;class name=&quot;testscripts.regression.ValidateLoginPOM&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -345,28 +338,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'adactinLoginTest')
-data.setCell(0, 2, 'testscripts.regression.DBTestingDataProvider')
-data.setCell(0, 3, 5667);
+data.setCell(0, 1, 'validateLoginPOMTest')
+data.setCell(0, 2, 'testscripts.regression.ValidateLoginPOM')
+data.setCell(0, 3, 30235);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'adactinLoginTest')
-data.setCell(1, 2, 'testscripts.regression.DBTestingDataProvider')
-data.setCell(1, 3, 1988);
+data.setCell(1, 1, 'validateLoginPOMTest')
+data.setCell(1, 2, 'testscripts.regression.ValidateLoginPOM')
+data.setCell(1, 3, 30022);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'adactinLoginTest')
-data.setCell(2, 2, 'testscripts.regression.DBTestingDataProvider')
-data.setCell(2, 3, 1728);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'adactinLoginTest')
-data.setCell(3, 2, 'testscripts.regression.DBTestingDataProvider')
-data.setCell(3, 3, 1397);
+data.setCell(2, 1, 'validateLoginPOMTest')
+data.setCell(2, 2, 'testscripts.regression.ValidateLoginPOM')
+data.setCell(2, 3, 7818);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -392,65 +381,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testscripts.regression.DBTestingDataProvider</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
+              <div class="chronological-class-name">testscripts.regression.ValidateLoginPOM</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUP</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">adactinLoginTest(reyaz009, reyaz123)</span>
-                <span class="method-start">11546 ms</span>
+                <span class="method-name">validateLoginPOMTest(reyaz009, reyaz123)</span>
+                <span class="method-start">12767 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">17218 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">18550 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">adactinLoginTest(reyaz009, reyaz456)</span>
-                <span class="method-start">26995 ms</span>
+                <span class="method-name">validateLoginPOMTest(reyaz009, reyaz423)</span>
+                <span class="method-start">20588 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">28400 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">29499 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">adactinLoginTest(reyaz001, reyaz123)</span>
-                <span class="method-start">38101 ms</span>
+                <span class="method-name">validateLoginPOMTest(reyaz010, reyaz123)</span>
+                <span class="method-start">50840 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">40093 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">41299 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">adactinLoginTest(reyaz001, reyaz456)</span>
-                <span class="method-start">50441 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">52173 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">80869 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
-<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

@@ -9,13 +9,14 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class AdactinLoginUsingKeywords  {
 	
 	
-	@Test
-	public void loginTest() throws IOException, InterruptedException
+	@Test(dataProvider="getData")
+	public void loginTest(String un,String pass) throws IOException, InterruptedException
 	{
 		LoginKeywords keys=new LoginKeywords();
 		
@@ -53,11 +54,11 @@ public class AdactinLoginUsingKeywords  {
 			}
 			else if(action.equals("enterUsername"))
 			{
-				keys.enterUsername(pr.getProperty("username_txt"),row.getCell(4).getStringCellValue().trim());
+				keys.enterUsername(pr.getProperty("username_txt"),un);
 			}
 			else if(action.equals("enterPassword"))
 			{
-				keys.enterPassword(pr.getProperty("password_txt"),row.getCell(4).getStringCellValue().trim());
+				keys.enterPassword(pr.getProperty("password_txt"),pass);
 			}
 			else if(action.equals("clickLogin"))
 			{
@@ -74,5 +75,37 @@ public class AdactinLoginUsingKeywords  {
 		
 		
 	}
+	
+	@DataProvider
+	public Object[][] getData() throws IOException
+	{
+		
+		
+		FileInputStream f=new FileInputStream("E:\\RamaRao\\FrameworkAutomation\\src\\test\\resources\\testdata\\registration.xlsx");
+		
+		XSSFWorkbook wb=new XSSFWorkbook(f);
+		
+		XSSFSheet ws=wb.getSheet("Sheet2");
+		
+		Object[][] obj=new Object[ws.getLastRowNum()][2];
+		
+		
+		for(int i=0,j=1;i<ws.getLastRowNum();i++)
+		{
+			obj[i][0]=ws.getRow(j).getCell(0).getStringCellValue();
+			obj[i][1]=ws.getRow(j).getCell(1).getStringCellValue();
+			j++;
+			
+		}
+		
+		
+		return obj;
+		
+		
+		
+		
+	}
+	
 
+	
 }

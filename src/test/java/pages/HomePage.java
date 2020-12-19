@@ -29,7 +29,7 @@ public class HomePage {
 	WebElement login=driver.findElement(By.xpath("//input[@name='login']"));*/
 	
 	
-	@FindBy(xpath="//input[@name='username']") 
+	@FindBy(xpath="//input[@name='username']")
 	WebElement username;
 	
 	@FindBy(xpath="//input[@name='password']") 
